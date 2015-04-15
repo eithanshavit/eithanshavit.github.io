@@ -12,18 +12,23 @@
         {{ content }}
       </div>
       <div class="category-excerpts">
-        {% for post in site.posts %}
+        {% assign sorted_posts = site.posts | sort: 'priority' %}
+        {% for post in sorted_posts %}
           {% if post.categories contains page.category_index %}
-            <a href="{{ post.url }}"</a>
               <div class="category-excerpt">
-                <div class="category-excerpt-icon">
-                  <img class='menu-icon' src="{{ post.logo }}">
-                </div>
-                <div class="category-excerpt-text">
-                  <p>{{post.excerpt}}</p>
-                </div>
+                <a href="{{ post.url }}"</a>
+                  <div class="category-excerpt-icon">
+                    <img class='menu-icon' src="{{ post.logo }}">
+                  </div>
+                  <div class="category-excerpt-text">
+                    <div class="category-excerpt-title">
+                     {{ post.title }}
+                     <span class="category-excerpt-date"> - {{ post.date | date: "%b %-d, %Y" }}</span>
+                    </div>
+                    <p>{{post.excerpt}}</p>
+                  </div>
+                </a>
               </div>
-            </a>
           {% endif %}
         {% endfor %}
       </div>

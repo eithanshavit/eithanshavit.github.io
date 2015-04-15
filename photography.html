@@ -2,13 +2,34 @@
 layout: page
 title: photography
 permalink: /photography.html
+priority: 20
 ---
 <div class="photography">
+  <p>
+    "I remember every photo I take, it's burned into my memroy."
+  </p>
   <div class="photography-links">
-     Albums:
-     <a href="#asia">Asia</a>
-     <a href="#israel">Israel</a>
-     <a href="#more">More</a>
+     Albums<br>
+     <a href="#asia">
+       <div class="button white">
+         Asia
+       </div>
+     </a>
+     <a href="#israel">
+       <div class="button white">
+         Israel
+       </div>
+     </a>
+     <a href="#other">
+       <div class="button white">
+         Other
+       </div>
+     </a>
+     <a href="http://www.flickr.com/photos/eithanshavit/sets/">
+       <div class="button white" style="color: rgb(255, 88, 119);">
+         Flickr
+       </div>
+     </a>
   </div>
   <a id="asia"><h1>Some photos I took while travelling in Asia</h1></a>
   <div class="images-loaded-container">
@@ -17,7 +38,9 @@ permalink: /photography.html
           {% for image in site.data.photography_east_images %}
              <li class="image-is-loading">
                <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
-             </li>
+             </li
+
+           </div>
            {% endfor %}
         </ul>
      </div>
@@ -31,10 +54,12 @@ permalink: /photography.html
                <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
              </li>
            {% endfor %}
+
+         </p>
         </ul>
      </div>
   </div>
-  <a id="more"><h1>Some more photos</h1></a>
+  <a id="other"><h1>Some more photos</h1></a>
   <div class="images-loaded-container">
      <div class="photography-gallery">
         <ul>

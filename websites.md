@@ -3,5 +3,5 @@ layout: category
 title: websites
 permalink: /websites.html
 category_index: websites
+priority: 5
 ---
-Hi, this is the websites category
