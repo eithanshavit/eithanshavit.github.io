@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "Circle Clock"
+date:   2014-02-27
+categories: woodwork
+logo: https://s3-us-west-1.amazonaws.com/eithanshavit.com/img/gallery/woodwork/clock/clock_logo.png
+excerpt: This is one of my favorites. A beautiful and dead simple analog clock with a twist.
+---
+<p>A wooden clock inspired by the Roman numeral system.</p>
+<div class="images-loaded-container">
+   <div class="post-gallery">
+      <ul>
+        {% for image in site.data.circle_clock_images %}
+           <li class="image-is-loading">
+             <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+           </li>
+         {% endfor %}
+      </ul>
+   </div>
+</div>
+
+
+</p>
+<script type="text/javascript">
+   // Fancybox
+   $(document).ready(function() {
+      $('.fancybox').fancybox({
+        padding: 0,
+        helpers: {
+          overlay: {
+            locked: false
+          }
+        }
+      });
+   });
+
+   // ImagesLoaded
+   var container = $('.images-loaded-container');
+   var imgLoad = imagesLoaded( container );
+   imgLoad.on( 'progress', function( instance, image ) {
+     image.img.parentNode.parentNode.className = image.isLoaded ? '' : 'image-is-broken';
+   });
+</script>

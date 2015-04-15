@@ -1,0 +1,17 @@
+<header class="site-header">
+
+  <nav class="site-nav">
+     <div class='menu-icon'>
+        <a href="/"><img class='menu-icon' src="/assets/img/logo.png"></a>
+     </div>
+    <div class="trigger">
+      {% for iterPage in site.pages %}
+        {% if iterPage.title %}
+        <a class="page-link-{{ iterPage.title | slugify }} {%if iterPage.title == page.title%}page-link-active{% endif %}" href="{{ iterPage.url | prepend: site.baseurl }}">{{ iterPage.title }}</a>
+        {% endif %}
+      {% endfor %}
+      <a class="page-link-code" href="https://github.com/eithanshavit?tab=repositories">code</a>
+    </div>
+  </nav>
+
+</header>

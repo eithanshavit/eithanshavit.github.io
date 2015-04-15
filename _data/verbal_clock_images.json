@@ -1,0 +1,75 @@
+{
+   "final" : [
+      {
+         "category" : "final",
+         "url" : "/assets/img/vc/vc_front.jpg",
+         "thumbUrl" : "/assets/img/vc/vc_front.jpg"
+      },
+      {
+         "category" : "final",
+         "url" : "/assets/img/vc/vc_frontclose.jpg",
+         "thumbUrl" : "/assets/img/vc/vc_frontclose.jpg"
+      },
+      {
+         "category" : "final",
+         "url" : "/assets/img/vc/vc_frontclose2.jpg",
+         "thumbUrl" : "/assets/img/vc/vc_frontclose2.jpg"
+      }
+   ],
+   "hardware" : [
+      {
+         "category" : "hardware",
+         "url" : "/assets/img/vc/vc_layout.png",
+         "thumbUrl" : "/assets/img/vc/vc_layout.png"
+      },
+      {
+         "category" : "hardware",
+         "url" : "/assets/img/vc/vc_schematics.png",
+         "thumbUrl" : "/assets/img/vc/vc_schematics.png"
+      },
+      {
+         "category" : "hardware",
+         "url" : "/assets/img/vc/vc_pcb.jpg",
+         "thumbUrl" : "/assets/img/vc/vc_pcb.jpg"
+      },
+      {
+         "category" : "hardware",
+         "url" : "/assets/img/vc/vc_assembled.jpg",
+         "thumbUrl" : "/assets/img/vc/vc_assembled.jpg"
+      },
+      {
+         "category" : "hardware",
+         "url" : "/assets/img/vc/vc_witharduino.jpg",
+         "thumbUrl" : "/assets/img/vc/vc_witharduino.jpg"
+      }
+   ],
+   "plastics" : [
+      {
+         "category" : "plastics",
+         "url" : "/assets/img/vc/vc_wordpanel.jpg",
+         "thumbUrl" : "/assets/img/vc/vc_wordpanel.jpg"
+      },
+      {
+         "category" : "plastics",
+         "url" : "/assets/img/vc/vc_holepanel.jpg",
+         "thumbUrl" : "/assets/img/vc/vc_holepanel.jpg"
+      },
+      {
+         "category" : "plastics",
+         "url" : "/assets/img/vc/vc_cutout.jpg",
+         "thumbUrl" : "/assets/img/vc/vc_cutout.jpg"
+      }
+   ],
+   "craft" : [
+      {
+         "category" : "craft",
+         "url" : "/assets/img/vc/vc_leds.jpg",
+         "thumbUrl" : "/assets/img/vc/vc_leds.jpg"
+      },
+      {
+         "category" : "craft",
+         "url" : "/assets/img/vc/vc_finalback.jpg",
+         "thumbUrl" : "/assets/img/vc/vc_finalback.jpg"
+      }
+   ]
+}

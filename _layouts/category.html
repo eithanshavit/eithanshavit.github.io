@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="category-content">
+      <div class="category-title">
+        {{ content }}
+      </div>
+      <div class="category-excerpts">
+        {% for post in site.posts %}
+          {% if post.categories contains page.category_index %}
+            <a href="{{ post.url }}"</a>
+              <div class="category-excerpt">
+                <div class="category-excerpt-icon">
+                  <img class='menu-icon' src="{{ post.logo }}">
+                </div>
+                <div class="category-excerpt-text">
+                  <p>{{post.excerpt}}</p>
+                </div>
+              </div>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+
+
+</div>
+  </body>
+
+</html>

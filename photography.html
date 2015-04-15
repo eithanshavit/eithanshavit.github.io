@@ -1,0 +1,73 @@
+---
+layout: page
+title: photography
+permalink: /photography.html
+---
+<div class="photography">
+  <div class="photography-links">
+     Albums:
+     <a href="#asia">Asia</a>
+     <a href="#israel">Israel</a>
+     <a href="#more">More</a>
+  </div>
+  <a id="asia"><h1>Some photos I took while travelling in Asia</h1></a>
+  <div class="images-loaded-container">
+     <div class="photography-gallery">
+        <ul>
+          {% for image in site.data.photography_east_images %}
+             <li class="image-is-loading">
+               <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+             </li>
+           {% endfor %}
+        </ul>
+     </div>
+  </div>
+  <a id="israel"><h1>From around Israel</h1></a>
+  <div class="images-loaded-container">
+     <div class="photography-gallery">
+        <ul>
+          {% for image in site.data.photography_israel_images %}
+             <li class="image-is-loading">
+               <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+             </li>
+           {% endfor %}
+        </ul>
+     </div>
+  </div>
+  <a id="more"><h1>Some more photos</h1></a>
+  <div class="images-loaded-container">
+     <div class="photography-gallery">
+        <ul>
+          {% for image in site.data.photography_more_images %}
+             <li class="image-is-loading">
+               <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+             </li>
+           {% endfor %}
+        </ul>
+     </div>
+  </div>
+  <h2>Even more on my <a target="_blank" href="http://www.flickr.com/photos/eithanshavit/sets/">Flickr page</a>.</h2>
+  <br>
+  <br>
+  <br>
+</div>
+<script type="text/javascript">
+   // Fancybox
+   $(document).ready(function() {
+      $('.fancybox').fancybox({
+        padding: 0,
+        helpers: {
+          overlay: {
+            locked: false
+          }
+        }
+      });
+   });
+
+   // ImagesLoaded
+   var container = $('.images-loaded-container');
+   var imgLoad = imagesLoaded( container );
+   imgLoad.on( 'progress', function( instance, image ) {
+     image.img.parentNode.parentNode.className = image.isLoaded ? '' : 'image-is-broken';
+   });
+</script>

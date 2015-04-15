@@ -1,0 +1,131 @@
+---
+layout: post
+title: Verbal Clock
+date: 2012-01-01
+categories: hardware
+logo: "/assets/img/vc/logo.png"
+excerpt: I built a clock that tells the time with words. It was a long and challenging process. Check it out
+---
+<p>
+  One day, as I was visiting <a target="_blank" href="http://mindtribe.com/">MindTribe</a>, I
+  noticed a really cool clock hanging on the wall of their lounge area. I thought to
+  myself that "this shouldn't be too difficult to make". It turned out to be more
+  challenging than I thought, and I learned a lot in the process.
+</p>
+
+<p>
+  The interesting aspect of this project was combining different types of
+  engineering into one final product. I decided to go with an Arduino controller
+  as the brain, connected to many LEDs. The front panel is laser cut from Acrylic
+  plastic, and each LED sits behind a word cutout and lights up when the time is
+  right. The whole thing goes into a nice wooden frame.
+</p>
+<div class="images-loaded-container">
+   <div class="post-gallery">
+      <ul>
+        {% for image in site.data.verbal_clock_images.final %}
+           <li class="image-is-loading">
+             <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+           </li>
+         {% endfor %}
+      </ul>
+   </div>
+</div>
+<div style="clear:both"></div>
+
+<p>
+  To create every single part of this project, I needed to learn verious technologies.
+</p>
+<h2>Software</h2>
+
+<p>
+  This was the easy part. The micro controller runs a loop that polls the real
+  time clock (RTC) chip for the current time. It then calculates which words to
+  light up and pushes this data serially to the LEDs.
+</p>
+
+<p>
+  Another thing to do in the loop is debounce the on-board button and react to its state. I am currently using the button to activate a LEDs test mode, but it also supports adjusting the time.
+</p>
+
+<h2>Hardware</h2>
+<p>
+  The first issue I encouterd using the Arduino, is the lack of IO outputs. My design required 24 indepented LEDs and the Arduino Uno only has around 10 GPIOs. The solution here is to use shift registers (I used the <a href="https://github.com/oogiyot/VerbalClock/raw/master/Specs/TPIC6B595.pdf">TPIC6B595</a>) and serially pipe the status of each bit. This uses just 3 GPIOs and works perfectly under the lax timing constrains of this clock.
+</p>
+
+<p>
+  Another issue is that the Arduino's ability to keep real time is limited. We can manually teach it what time it is, but this will be lost on reset. I used the <a href="https://github.com/oogiyot/VerbalClock/raw/master/Specs/DS1307.pdf">DS1307</a> IC to keep track of the time, even after power is lost. It is connected to a backup battery that is activated when needed.
+</p>
+
+<p>
+  After experimenting and testing the protoype circuit, I used <a target="_blank" href="http://www.cadsoftusa.com/">Eagle</a> to design and layout a PCB. <a target="_blank" href="http://oshpark.com/">OSH Park</a> is a great community that combines PCB designs from its members to efficiently fabricate small boards onto a large one, and keep costs down.
+</p>
+<div class="images-loaded-container">
+   <div class="post-gallery">
+      <ul>
+        {% for image in site.data.verbal_clock_images.hardware %}
+           <li class="image-is-loading">
+             <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+           </li>
+         {% endfor %}
+      </ul>
+   </div>
+</div>
+<div style="clear:both"></div>
+
+<h2>Plastics</h2>
+
+<p>
+  I used vector graphics to create a precise design of the front panel, and sent it to <a target="_blank" href="http://ponoko.com/">Ponoko</a> to laser cut it.
+</p>
+<div class="images-loaded-container">
+   <div class="post-gallery">
+      <ul>
+        {% for image in site.data.verbal_clock_images.plastics %}
+           <li class="image-is-loading">
+             <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+           </li>
+         {% endfor %}
+      </ul>
+   </div>
+</div>
+<div style="clear:both"></div>
+
+<h2>Wood Crafting</h2>
+
+<p>
+  My friend's father, a carpenter, helped me create a wooden frame to hold my Hardware.
+</p>
+<div class="images-loaded-container">
+   <div class="post-gallery">
+      <ul>
+        {% for image in site.data.verbal_clock_images.craft %}
+           <li class="image-is-loading">
+             <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+           </li>
+         {% endfor %}
+      </ul>
+   </div>
+</div>
+<div style="clear:both"></div>
+
+<script type="text/javascript">
+   // Fancybox
+   $(document).ready(function() {
+      $('.fancybox').fancybox({
+        padding: 0,
+        helpers: {
+          overlay: {
+            locked: false
+          }
+        }
+      });
+   });
+
+   // ImagesLoaded
+   var container = $('.images-loaded-container');
+   var imgLoad = imagesLoaded( container );
+   imgLoad.on( 'progress', function( instance, image ) {
+     image.img.parentNode.parentNode.className = image.isLoaded ? '' : 'image-is-broken';
+   });
+</script>
