@@ -8,7 +8,7 @@
       {% assign sorted_pages = site.pages | sort: 'priority' %}
       {% for iterPage in sorted_pages %}
         {% if iterPage.title %}
-        <a class="page-link-{{ iterPage.title | slugify }} {%if iterPage.title == page.title%}page-link-active{% endif %}" href="{{ iterPage.url | prepend: site.baseurl }}">{{ iterPage.title }}</a>
+        <a class="page-link-{{ iterPage.title | slugify }} {%if iterPage.title == page.title%}page-link-active{% endif %}" href="{{ iterPage.url | prepend: site.baseurl }}#anchor">{{ iterPage.title }}</a>
         {% endif %}
       {% endfor %}
       <a class="page-link-code" href="https://github.com/eithanshavit?tab=repositories">github</a>
