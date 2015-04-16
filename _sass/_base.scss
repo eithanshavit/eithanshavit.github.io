@@ -14,15 +14,14 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    font-family: HelveticaNeue-Thin, Open Sans, sans-serif;
+    font-size: 16px;
+    line-height: 1.0;
     font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
+    color: #000;
+    background-color: #FFF;
     -webkit-text-size-adjust: 100%;
 }
-
 
 
 /**
@@ -32,9 +31,8 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: 15px;
 }
-
 
 
 /**
@@ -54,26 +52,6 @@ figure > img {
     display: block;
 }
 
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
 
 
 /**
@@ -89,7 +67,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $link-color;
+    color: #CE0063;
+    &:hover {
+      color: #21BB46;
+    }
     text-decoration: none;
 }
 
@@ -99,9 +80,9 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    color: #f3f3f3;
+    border-left: 4px solid #f3f3f3;
+    padding-left: 15px;
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
@@ -119,7 +100,7 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid #f3f3f3;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -141,26 +122,6 @@ pre {
 
 
 
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
 
 
 /**
@@ -175,24 +136,6 @@ pre {
     }
 }
 
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
-}
 
 .button {
   border-style: solid;
@@ -212,6 +155,10 @@ pre {
   -webkit-transition: all 0.3s ease 0s;
   width: 12.795%; /* auto */
   text-align: center; /* DELETE WHEN WIDTH AUTO */
+
+  @include media-query-max($on-palm) {
+    width: 22%; /* auto */
+  }
   &.white {
     background: none repeat scroll 0 0 #ffffff;
     color: #000;

@@ -4,7 +4,7 @@
      <div class='menu-icon'>
         <a href="/"><img class='menu-icon' src="/assets/img/logo.png"></a>
      </div>
-    <div class="trigger">
+    <div class="site-menu">
       {% assign sorted_pages = site.pages | sort: 'priority' %}
       {% for iterPage in sorted_pages %}
         {% if iterPage.title %}
