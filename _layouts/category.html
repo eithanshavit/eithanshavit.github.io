@@ -16,7 +16,7 @@
         {% for post in sorted_posts %}
           {% if post.categories contains page.category_index %}
               <div class="category-excerpt">
-                <a href="{{ post.url }}"</a>
+                <a href="{{ post.url }}#anchor"</a>
                   <div class="category-excerpt-icon">
                     <img class='menu-icon' src="{{ post.logo }}">
                   </div>
