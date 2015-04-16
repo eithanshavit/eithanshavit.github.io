@@ -5,7 +5,7 @@ date: 2015-04-15
 categories: websites
 logo: /assets/img/alef.png
 priority: 1
-excerpt: <p>This baby.</p>
+excerpt: <p>This beautiful website.</p>
 ---
 You're looking at it.
 

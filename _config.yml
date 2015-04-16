@@ -9,3 +9,11 @@ github_username:  eithanshavit
 
 # Build settings
 markdown: kramdown
+
+# Ignore
+exclude:
+- "bower_components"
+- "bower.json"
+- "Gruntfile.coffee"
+- "node_modules"
+- "package.json"
