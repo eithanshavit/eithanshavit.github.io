@@ -103,7 +103,7 @@
     }
 
 
-    @include media-query-max($on-palm) {
+    @include media-query-max($on-small) {
         float: inherit;
         width: 100%;
 
@@ -132,12 +132,14 @@
 }
 
 .wrapper {
-  float: left;
-  width: 900px;
-  padding: 65px 0 0 21px;
-  @include media-query-max($on-palm) {
-      float: inherit;
+  padding-left: 20px;
+  padding-top: 65px;
+  padding-right: 20px;
+  max-width: 900px;
+  overflow: hidden;
+  @include media-query-max($on-small) {
       width: 100%;
+      overflow: visible;
       padding:20px 20px;
       box-sizing: border-box;
   }
@@ -149,8 +151,10 @@
  */
 .home-content {
 
-  @include media-query-min($not-on-palm) {
-      padding: 126px 0 0 58px;
+  @include media-query-min($on-small) {
+      padding-top: 83px;
+      padding-left: 50px;
+      padding-right: 50px;
   }
 
   p {
@@ -227,7 +231,7 @@
           width: 40px;
         }
 
-        @include media-query-max($on-palm) {
+        @include media-query-max($on-small) {
           width: 50px;
           img {
             width: 30px;
@@ -282,7 +286,7 @@
       letter-spacing: -1px;
       line-height: 1;
 
-      @include media-query-max($on-laptop) {
+      @include media-query-max($on-medium) {
           font-size: 36px;
       }
   }
@@ -394,7 +398,7 @@
           -ms-transition: opacity 1.1s;
               transition: opacity 1.1s;
       height: 140px;
-      @include media-query-max($on-palm) {
+      @include media-query-max($on-small) {
         width: 100%;
         height: auto;
       }
@@ -412,7 +416,7 @@
       margin: 0 5px 5px 0;
       background-position: center center;
       background-repeat: no-repeat;
-      @include media-query-max($on-palm) {
+      @include media-query-max($on-small) {
         width: 100%;
         height: auto;
       }
