@@ -26,7 +26,7 @@ priority: 1
       <ul>
         {% for image in site.data.verbal_clock_images.final %}
            <li class="image-is-loading">
-             <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+             <a class="swipebox" href="{{image.url}}" rel="swipebox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
            </li>
          {% endfor %}
       </ul>
@@ -66,7 +66,7 @@ priority: 1
       <ul>
         {% for image in site.data.verbal_clock_images.hardware %}
            <li class="image-is-loading">
-             <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+             <a class="swipebox" href="{{image.url}}" rel="swipebox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
            </li>
          {% endfor %}
       </ul>
@@ -84,7 +84,7 @@ priority: 1
       <ul>
         {% for image in site.data.verbal_clock_images.plastics %}
            <li class="image-is-loading">
-             <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+             <a class="swipebox" href="{{image.url}}" rel="swipebox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
            </li>
          {% endfor %}
       </ul>
@@ -102,31 +102,10 @@ priority: 1
       <ul>
         {% for image in site.data.verbal_clock_images.craft %}
            <li class="image-is-loading">
-             <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+             <a class="swipebox" href="{{image.url}}" rel="swipebox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
            </li>
          {% endfor %}
       </ul>
    </div>
 </div>
 <div style="clear:both"></div>
-
-<script type="text/javascript">
-   // Fancybox
-   $(document).ready(function() {
-      $('.fancybox').fancybox({
-        padding: 0,
-        helpers: {
-          overlay: {
-            locked: false
-          }
-        }
-      });
-   });
-
-   // ImagesLoaded
-   var container = $('.images-loaded-container');
-   var imgLoad = imagesLoaded( container );
-   imgLoad.on( 'progress', function( instance, image ) {
-     image.img.parentNode.parentNode.className = image.isLoaded ? '' : 'image-is-broken';
-   });
-</script>

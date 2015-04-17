@@ -26,6 +26,27 @@ module.exports = (grunt) ->
           src: "**"
           dest: "assets/js/fancybox"
         }]
+      swipebox:
+        files: [
+          {
+            expand: true
+            cwd: "bower_components/swipebox/src/js/"
+            src: "jquery.swipebox.min.js"
+            dest: "assets/js/swipebox/src"
+          }
+          {
+            expand: true
+            cwd: "bower_components/swipebox/src/css/"
+            src: "swipebox.min.css"
+            dest: "assets/js/swipebox/css"
+          }
+          {
+            expand: true
+            cwd: "bower_components/swipebox/src/img/"
+            src: "**"
+            dest: "assets/js/swipebox/img"
+          }
+          ]
       imagesloaded:
         files: [{
           expand: true

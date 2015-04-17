@@ -17,7 +17,7 @@ excerpt: <p>The inspiration for this unique desk lamp comes from a stone candle 
       <ul>
         {% for image in site.data.level_lamp_images %}
            <li class="image-is-loading">
-             <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+             <a class="swipebox" href="{{image.url}}" rel="swipebox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
            </li>
          {% endfor %}
       </ul>
@@ -26,23 +26,3 @@ excerpt: <p>The inspiration for this unique desk lamp comes from a stone candle 
 
 
 </p>
-<script type="text/javascript">
-   // Fancybox
-   $(document).ready(function() {
-      $('.fancybox').fancybox({
-        padding: 0,
-        helpers: {
-          overlay: {
-            locked: false
-          }
-        }
-      });
-   });
-
-   // ImagesLoaded
-   var container = $('.images-loaded-container');
-   var imgLoad = imagesLoaded( container );
-   imgLoad.on( 'progress', function( instance, image ) {
-     image.img.parentNode.parentNode.className = image.isLoaded ? '' : 'image-is-broken';
-   });
-</script>

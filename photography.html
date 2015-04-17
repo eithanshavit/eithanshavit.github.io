@@ -37,7 +37,7 @@ priority: 20
         <ul>
           {% for image in site.data.photography_east_images %}
              <li class="image-is-loading">
-               <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+               <a class="swipebox" href="{{image.url}}" rel="swipebox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
              </li
 
            </div>
@@ -51,7 +51,7 @@ priority: 20
         <ul>
           {% for image in site.data.photography_israel_images %}
              <li class="image-is-loading">
-               <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+               <a class="swipebox" href="{{image.url}}" rel="swipebox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
              </li>
            {% endfor %}
 
@@ -65,7 +65,7 @@ priority: 20
         <ul>
           {% for image in site.data.photography_more_images %}
              <li class="image-is-loading">
-               <a class="fancybox" href="{{image.url}}" rel="lightbox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
+               <a class="swipebox" href="{{image.url}}" rel="swipebox[{{image.category}}]"><img src="{{image.thumbUrl}}" alt=""/></a>
              </li>
            {% endfor %}
         </ul>
@@ -76,23 +76,3 @@ priority: 20
   <br>
   <br>
 </div>
-<script type="text/javascript">
-   // Fancybox
-   $(document).ready(function() {
-      $('.fancybox').fancybox({
-        padding: 0,
-        helpers: {
-          overlay: {
-            locked: false
-          }
-        }
-      });
-   });
-
-   // ImagesLoaded
-   var container = $('.images-loaded-container');
-   var imgLoad = imagesLoaded( container );
-   imgLoad.on( 'progress', function( instance, image ) {
-     image.img.parentNode.parentNode.className = image.isLoaded ? '' : 'image-is-broken';
-   });
-</script>
