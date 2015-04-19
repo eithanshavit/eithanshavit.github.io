@@ -16,7 +16,7 @@
 
 .site-nav {
     float: left;
-    width: 200px;
+    width: 120px;
 
     a {
       margin:auto;
@@ -24,14 +24,14 @@
       color: #000;
       display: block;
       text-align: center;
-      padding:25px 0;
-      font-size: 25px;
+      padding:20px 0;
+      font-size: 18px;
     }
 
     .menu-icon {
-      padding: 10px 0 10px 0;
+      padding: 2px 0 0px 0;
       margin: auto;
-      max-width: 100px;
+      max-width: 65px;
     }
 
     .page-link {
@@ -132,7 +132,7 @@
 }
 
 .wrapper {
-  padding-left: 20px;
+  padding-left: 40px;
   padding-top: 65px;
   padding-right: 20px;
   max-width: 900px;
