@@ -204,6 +204,12 @@
 
   .category-title {
     padding: 0 0 30px 0;
+    a {
+      color: #CE0063;
+      &:hover {
+        color: #21BB46;
+      }
+    }
   }
 
   .category-excerpts {
@@ -274,7 +280,21 @@
 
   h2 {
     color: #00A85B;
-    font-size: 22px;
+    font-size: 26px;
+    padding-top: 18px;
+  }
+
+  h3 {
+    color: #00602d;
+    font-size: 20px;
+    padding-top: 13px;
+  }
+
+  img {
+    margin: 1em auto;
+    display: block;
+    width: auto;
+    max-height: 500px;
   }
 
   .post-header {

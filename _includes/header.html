@@ -11,7 +11,6 @@
         <a class="page-link-{{ iterPage.title | slugify }} {%if iterPage.title == page.title%}page-link-active{% endif %}" href="{{ iterPage.url | prepend: site.baseurl }}#anchor">{{ iterPage.title }}</a>
         {% endif %}
       {% endfor %}
-      <a class="page-link-code" href="https://github.com/eithanshavit?tab=repositories">github</a>
     </div>
   </nav>
 
