@@ -2,7 +2,7 @@
 layout: post
 title: Self Sizing UICollectionView Cell
 categories: code
-logo: /assets/img/adidas.png
+logo: /assets/img/posts/Dynamic_Size_UICollectionView_Cell_Logo.png
 priority: 1
 excerpt: <p>A tutorial for creating UICollectionViewCells that are dynamically sized to fit their content.</p>
 ---
