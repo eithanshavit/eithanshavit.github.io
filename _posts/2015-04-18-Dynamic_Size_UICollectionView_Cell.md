@@ -4,7 +4,7 @@ title: Self Sizing UICollectionView Cell
 categories: code
 logo: /assets/img/posts/UICollectionView/Dynamic_Size_UICollectionView_Cell_Logo.png
 priority: 1
-excerpt: <p>A tutorial for creating UICollectionViewCells that are dynamically sized to fit their content.</p>
+excerpt: A tutorial for creating UICollectionViewCells that are dynamically sized to fit their content.
 ---
 In short:
 We're going to see how to configure the UICollectionView objects to allow cells that resize themselves based on their content. See example project and template code at [GitHub](https://github.com/eithanshavit/ContentAwareCollectionCell).

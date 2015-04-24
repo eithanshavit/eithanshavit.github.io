@@ -4,7 +4,7 @@ title: zeshesham.com
 date: 2013-01-01
 categories: websites
 logo: "/assets/img/zeshesham.png"
-excerpt: <p>A wonderful recipe blog spiced with creative short stories. My good friend is the writer, cook, and photographer.</p>
+excerpt: A wonderful recipe blog spiced with creative short stories. My good friend is the writer, cook, and photographer.
 priority: 50
 ---
 This is a customized WordPress PHP website.
