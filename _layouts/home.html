@@ -9,7 +9,30 @@
 
     <div id="anchor" class="home-content wrapper">
       {{ content }}
-    </div>
+
+      <div class="index-excerpts">
+        <h2>
+          Recent posts:
+        </h2>
+        {% assign sorted_posts = site.posts | sort: 'date' %}
+        {% for post in sorted_posts reversed limit: 20 %}
+          <div class="index-excerpt">
+            <a href="{{ post.url }}#anchor"</a>
+              <div class="index-excerpt-icon">
+                <img class='menu-icon' src="{{ post.logo }}">
+              </div>
+              <div class="index-excerpt-text">
+                <div class="index-excerpt-title">
+                 {{ post.title }}
+                 <span class="index-excerpt-date"> - {{ post.date | date: "%b %-d, %Y" }}</span>
+                </div>
+                <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
 
   </body>
 

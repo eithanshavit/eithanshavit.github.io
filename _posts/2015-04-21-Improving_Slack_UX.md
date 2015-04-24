@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Improving Slack's UX
-categories: draft
+categories: code
 logo: /assets/img/posts/Slack/slack_logo.png
 priority: 1
-excerpt: A tutorial for creating UICollectionViewCells that are dynamically sized to fit their content.
+excerpt: Experimenting with Slack iOS app's UX. Exploring design decisions, coming up with new ideas, and implementing solutions.
 ---
 In short: we're going to examine the user experience of Slack's iOS app.
 
