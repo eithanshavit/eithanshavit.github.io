@@ -8,6 +8,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-copy"
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.loadNpmTasks "grunt-exec"
+  grunt.loadNpmTasks "grunt-git"
 
   grunt.initConfig
 
@@ -85,6 +86,16 @@ module.exports = (grunt) ->
           port: 4000
           base: '_site'
           livereload: true
+
+    gitpush:
+      origin:
+        options:
+          origin: "master"
+
+
+  grunt.registerTask "push", [
+    "gitpush"
+  ]
 
   grunt.registerTask "build", [
     "copy"
