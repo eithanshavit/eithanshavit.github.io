@@ -2,14 +2,14 @@
 layout: post
 title: Self Sizing UICollectionView Cell
 categories: code
-logo: /assets/img/posts/Dynamic_Size_UICollectionView_Cell_Logo.png
+logo: /assets/img/posts/UICollectionView/Dynamic_Size_UICollectionView_Cell_Logo.png
 priority: 1
 excerpt: <p>A tutorial for creating UICollectionViewCells that are dynamically sized to fit their content.</p>
 ---
 In short:
 We're going to see how to configure the UICollectionView objects to allow cells that resize themselves based on their content. See example project and template code at [GitHub](https://github.com/eithanshavit/ContentAwareCollectionCell).
 
-![Example of dynamic size UICollectionViewCell](/assets/img/posts/Dynamic_Size_UICollectionView_Cell_Example.gif)
+![Example of dynamic size UICollectionViewCell](/assets/img/posts/UICollectionView/Dynamic_Size_UICollectionView_Cell_Example.gif)
 
 `UICollectionView` is an extremely powerful class and I find myself using it a lot. Sometimes even just for a simple list, instead of `UITableView`. I'm a big fan of Auto Layout, but for critical views such as reusable cells, I prefer to layout manually (check out [Swift CGRect Extensions](https://github.com/eithanshavit/SwiftCGRectExtensions) for helpful manual layout methods).
 

@@ -11,6 +11,9 @@ highlighter: pygments
 # Build settings
 markdown: kramdown
 
+kramdown:
+  input: GFM
+
 # Ignore
 exclude:
 - "bower_components"

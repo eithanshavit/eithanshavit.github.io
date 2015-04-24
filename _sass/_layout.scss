@@ -139,6 +139,7 @@
   padding-left: 40px;
   padding-top: 65px;
   padding-right: 20px;
+  margin-bottom: 50px;
   max-width: 900px;
   overflow: hidden;
   @include media-query-max($on-small) {
@@ -285,7 +286,7 @@
   h2 {
     color: #00A85B;
     font-size: 26px;
-    padding-top: 18px;
+    padding-top: 40px;
   }
 
   h3 {
@@ -317,6 +318,11 @@
 
   .post-content {
 
+     li {
+       font-size: 20px;
+       line-height: 1.5;
+     }
+
       p {
          padding-top:0;
          margin-top:0;
@@ -334,6 +340,27 @@
 
     }
 
+    .table-figures {
+      width: 100%;
+      text-align: center;
+      margin: 40px 0;
+
+      img {
+        margin: 0 auto;
+        margin-top: 5px;
+      }
+
+    }
+}
+
+figcaption {
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 10px;
+
+  em {
+    font-weight: bold;
+  }
 }
 
 /* Gallery */
