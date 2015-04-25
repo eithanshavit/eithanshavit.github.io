@@ -8,9 +8,9 @@ excerpt: Experimenting with Slack iOS app's UX. Exploring design decisions, comi
 ---
 In short: we're going to examine the user experience of Slack's iOS app.
 
-Everybody loves [Slack](https://slack.com/), for a good reason. It is a great product and a perfect example of how placing emphasis on UX could turn a good idea into a Billion Dollar product.
+Everybody loves [Slack](https://slack.com/), for a good reason. It is a great product and a perfect example of how placing emphasis on UX could turn a good idea into a billion dollar product.
 
-The reason I love Slack, other than the fact that it replaces the 40 year old email, is that the core ideas behind Slack have existed for years. IRC channels, IM, Group Chat, nothing new. The trick is packaging it all and providing an experience that is productive, fluent, and fun. The Slack team has done a great job creating a product that people can pick up easily, without giving up on advanced features for power users. The web and desktop apps are intuitive, practical, and clean, providing a smooth and easy experience.
+The reason why I love Slack, other than the fact that it replaces the 40 year old email, is that the core ideas behind Slack have existed for years. IRC channels, IM, Group Chat, nothing new. The trick is packaging it all and providing an experience that is productive, fluent, and fun. The Slack team has done a great job creating a product that people can pick up easily, without giving up on advanced features for power users. The web and desktop apps are intuitive, practical, and clean, providing a smooth and easy experience.
 
 Today I'm going to examine Slack's iOS app. It is a successful app that captures the great features described above. When I look at it however, it feels a little too 'simple', and lacks some traits that have proved to be useful in modern mobile apps. We'll look at different parts of the app, examine their function, and suggest alternative ways to achieve the same in a simpler and/or more intuitive fashion.
 
