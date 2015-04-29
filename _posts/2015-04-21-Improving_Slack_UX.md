@@ -3,7 +3,7 @@ layout: post
 title: Improving Slack's UX
 categories: code
 logo: /assets/img/posts/Slack/slack_logo.png
-priority: 1
+priority: 10
 excerpt: Experimenting with Slack iOS app's UX. Exploring design decisions, coming up with new ideas, and implementing solutions.
 ---
 In short: we're going to examine the user experience of Slack's iOS app.
