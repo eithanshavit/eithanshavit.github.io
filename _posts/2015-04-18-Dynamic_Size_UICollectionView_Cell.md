@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Self Sizing UICollectionView Cell
+title: Self Sizing UICollectionView Cells
 categories: code
 logo: /assets/img/posts/UICollectionView/Dynamic_Size_UICollectionView_Cell_Logo.png
 priority: 20
