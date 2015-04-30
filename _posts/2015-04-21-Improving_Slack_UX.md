@@ -125,7 +125,7 @@ As I marked in figure 5.1, I identify a number of topics to discuss:
 * Slack's hashtag logo is pretty cool. Its position in the header makes me think it's a logo. But in fact it serves also as a loading spinner, and as a button.
 * The tiny arrow next to the channel's name reminds me of a dropdown menu, which makes me think I can switch channels by tapping it. In fact, it takes us to the channel's preferences page.
 * Subjectively, I feel the overall aesthetic design of the header is inconsistent. It starts with a colorful bold graphic. Flows to bold text followed by a tiny icon. And ends with thin minimalistic icons.
-* Nit pick: The list icon on the far right does a poor job indicating what's behind it.
+* Nit pick: The list icon (variation of the [hamburger](http://blog.placeit.net/history-of-the-hamburger-icon/)) on the far right does a poor job indicating what's behind it.
 
 To address these issues I suggest a slightly modified header. In figure 5.2, I replaced the hashtag logo with an icon that changes according to the type of conversation. I believe that helps the user find him/herself more easily. In addition, together with the channel's name, the icon acts as a button that is more attractive to tap on than the tiny arrow. Tapping it takes us to the channel's preferences page.
 
