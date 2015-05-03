@@ -9,5 +9,5 @@ Hi, my name is Eithan Shavit. I am a Software Engineer, I have a degree in Elect
 
 This website is an attempt to document my experiments with various mediums such as web development, photography, hardware design, mobile apps, and carpentry.
 
-Please contact me at *EithanShavit at gmail dot com*.  
+Please email me at *me at eithanshavit dot com*
 Or checkout my [Linkedin](https://www.linkedin.com/pub/eithan-shavit/2a/773/242).
