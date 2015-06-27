@@ -1,25 +1,22 @@
 <footer class="site-footer">
 
-<!-- swipeBox -->
+<!-- Disqus -->
+<div id="comments-container">
+  <div id="disqus_thread"></div>
+</div>
 <script type="text/javascript">
-;( function( $ ) {
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'eithanshavit';
+    var disqus_identifier = '{{ page.id }}';
 
-  $( '.swipebox' ).swipebox( {
-    hideCloseButtonOnMobile : true, // true will hide the close button on mobile devices
-    hideBarsDelay : 2000, // delay before hiding bars on desktop
-    loopAtEnd: true // true will return to the first image after the last image is reached
-  } );
-
-} )( jQuery );
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-<!-- imagesLoaded -->
-<script type="text/javascript">
-   var container = $('.images-loaded-container');
-   var imgLoad = imagesLoaded( container );
-   imgLoad.on( 'progress', function( instance, image ) {
-     image.img.parentNode.parentNode.className = image.isLoaded ? '' : 'image-is-broken';
-   });
-</script>
 
 </footer>
