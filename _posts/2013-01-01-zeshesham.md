@@ -2,7 +2,7 @@
 layout: post
 title: zeshesham.com
 date: 2013-01-01
-categories: websites
+categories: code
 logo: "/assets/img/zeshesham.png"
 excerpt: A wonderful recipe blog spiced with creative short stories. My good friend is the writer, cook, and photographer.
 priority: 150
