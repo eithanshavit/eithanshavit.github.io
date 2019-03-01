@@ -5,9 +5,9 @@ permalink: /
 priority: 1
 ---
 
-Hi, my name is Eithan Shavit. I am an iOS developer at [Facebook](https://www.facebook.com), I have a degree in Electrical Engineering, and what I really love is working on products and user experience. I'm drawn to art and creativity and I'm always looking for new mediums through which to express my creativity, especially through technology. And the quest to use the right and the left sides of my brain together never ends.
+This website is old. Don't judge!
 
-This website is an attempt to document my extracurricular experiments with various mediums such as web development, photography, hardware design, mobile apps, and carpentry.
+Hello, I'm Eithan Shavit. I am an engineering manager at [Facebook](https://www.facebook.com), and I love working on products and building great user experiences. I'm drawn to arts and creativity and I'm always looking for new mediums through which to express my creativity. Always trying to use the right and left sides of my brain.
 
 Please email me at *me at eithanshavit dot com*
 Or checkout my [Linkedin](https://www.linkedin.com/pub/eithan-shavit/2a/773/242).
